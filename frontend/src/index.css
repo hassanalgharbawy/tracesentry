@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #09090b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(24, 24, 27, 0.86) 0%, rgba(9, 9, 11, 1) 36%),
+    #09090b;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__controls {
+  background: #18181b;
+  border: 1px solid #3f3f46;
+  box-shadow: none;
+}
+
+.react-flow__controls-button {
+  background: #18181b;
+  border-bottom: 1px solid #3f3f46;
+  color: #e4e4e7;
+}
+
+.react-flow__controls-button:hover {
+  background: #27272a;
+}

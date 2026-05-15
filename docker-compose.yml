@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: tracesentry-backend
+    environment:
+      TRACESENTRY_DB: /data/tracesentry.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - tracesentry-data:/data
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:8000
+    container_name: tracesentry-frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  tracesentry-data:
