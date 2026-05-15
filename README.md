@@ -1,3 +1,5 @@
+<img width="435" height="60" alt="image" src="https://github.com/user-attachments/assets/cb976563-b57b-4105-85cd-c091f01a8ae4" />
+
 # TraceSentry
 
 TraceSentry is a full-stack observability dashboard that simulates distributed-system incidents, visualizes service health, and explains likely root causes with rule-based analysis.
@@ -188,12 +190,9 @@ Invoke-RestMethod -Method Post http://127.0.0.1:8000/api/reset
 
 ## Screenshots
 
-Add screenshots after running the app locally:
-
-- `docs/screenshots/dashboard-overview.png` - full dashboard with service health and incident timeline
-- `docs/screenshots/dependency-map.png` - React Flow service dependency map after a simulation
-- `docs/screenshots/root-cause-analysis.png` - selected incident with explanation and runbook steps
-- `docs/screenshots/logs-and-metrics.png` - charts and filtered logs table
+<img width="1422" height="866" alt="image" src="https://github.com/user-attachments/assets/78efe60c-6e8c-484c-a55e-a0dc0f21669a" />
+<img width="1339" height="777" alt="image" src="https://github.com/user-attachments/assets/bc2433ea-2012-43ff-bd3b-bb6c45603c1e" />
+<img width="1252" height="900" alt="image" src="https://github.com/user-attachments/assets/b11dc3b7-4c28-49eb-ad76-c243963bdbe4" />
 
 ## What This Demonstrates
 
@@ -206,14 +205,7 @@ Add screenshots after running the app locally:
 - Docker-based local development
 - Testing and QA mindset
 
-## Future Improvements
 
-- Add WebSocket streaming for live metric updates
-- Add a persisted incident resolution workflow with owner, notes, and status changes
-- Add OpenTelemetry-style trace spans to connect logs and service dependencies
-- Add additional scenarios such as DNS failure, queue backlog, and partial region outage
-- Add Playwright end-to-end tests for the dashboard simulation flow
-- Add more formal anomaly detection with configurable rolling windows
 
 ## Resume Bullets
 
