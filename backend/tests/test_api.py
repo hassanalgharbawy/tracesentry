@@ -10,7 +10,7 @@ SCENARIOS = {
     "auth_failure": "auth-service",
     "payment_timeout": "payment-service",
     "api_gateway_spike": "api-gateway",
-    "network_packet_loss": "auth-service",
+    "network_packet_loss": "network",
 }
 
 
