@@ -6,6 +6,14 @@ TraceSentry is a full-stack observability dashboard that simulates distributed-s
 
 It is built as a recruiter-ready portfolio project for software engineering, backend, networking, DevOps, cybersecurity, and AI/ML-adjacent internship applications. The system uses only synthetic data and runs locally without paid APIs or external services.
 
+## Live Demo
+
+- Live App: https://tracesentry.vercel.app
+- Backend Health Check: https://tracesentry.onrender.com/health
+- GitHub Repository: https://github.com/hassanalgharbawy/tracesentry
+
+> Note: The backend is hosted on Render’s free tier, so the first request may take 30–60 seconds if the service has been inactive.
+
 ## Why I Built This
 
 Most portfolio projects show CRUD workflows. TraceSentry is different: it models how engineers monitor services, inspect logs and metrics, reason about dependencies, and communicate incident response decisions.
