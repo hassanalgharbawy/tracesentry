@@ -37,7 +37,14 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:4173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:4173",
+        "https://tracesentry.vercel.app",
+        "https://tracesentry-git-main-hassanalgharbawys-projects.vercel.app",
+    ],
+    allow_origin_regex=r"https://tracesentry-.*-hassanalgharbawys-projects\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
