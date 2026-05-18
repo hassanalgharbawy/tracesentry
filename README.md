@@ -10,7 +10,8 @@ It is built as a recruiter-ready portfolio project for software engineering, bac
 
 - Live App: https://tracesentry.vercel.app
 - Backend Health Check: https://tracesentry.onrender.com/health
-- GitHub Repository: https://github.com/hassanalgharbawy/tracesentry
+
+
 
 > Note: The backend is hosted on Render’s free tier, so the first request may take 30–60 seconds if the service has been inactive.
 
