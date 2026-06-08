@@ -1,3 +1,4 @@
+```python
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -40,12 +41,21 @@ def test_core_endpoints_and_all_scenarios():
         assert isinstance(response.json(), list)
 
     for scenario, expected_root in SCENARIOS.items():
+        reset_response = client.post("/api/reset")
+        assert reset_response.status_code == 200
+
         response = client.post(f"/api/simulate/{scenario}")
         assert response.status_code == 200
+
         body = response.json()
         assert body["scenario"] == scenario
-        assert body["incident"]["analysis"]["likely_root_cause"] == expected_root
+
+        actual_root = body["incident"]["analysis"]["likely_root_cause"]
+        assert actual_root == expected_root, (
+            f"scenario={scenario}, expected={expected_root}, got={actual_root}"
+        )
 
     response = client.post("/api/reset")
     assert response.status_code == 200
     assert response.json()["status"] == "reset"
+```
