@@ -1,4 +1,4 @@
-```python
+python
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -58,4 +58,4 @@ def test_core_endpoints_and_all_scenarios():
     response = client.post("/api/reset")
     assert response.status_code == 200
     assert response.json()["status"] == "reset"
-```
+
